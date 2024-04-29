@@ -44,6 +44,6 @@ server.listen(PORT,()=>{
 
 
 
-// app.get('/',(req,res)=>{
-//     res.send("<h1>Hey how are you</h1>")
-// })
+app.get('/',(req,res)=>{
+    res.send("<h1>Hey how are you</h1>")
+})
