@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,63 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.inputStyles{
+  background-color: blue;
+  boxShadow: inset 0px -1px 0px rgba(255, 255, 255, 0.18);
+}
+
+.formStyle{
+  @apply py-2 px-4 rounded-md  bg-richblack-700 w-full placeholder:text-richblack-50
+
+}
+
+.formShadow{
+  box-shadow:0px -1px 0px 0px #FFFFFF2E inset;
+}
+
+.formLabel{
+  @apply text-richblack-200 font-medium
+}
+
+.yellowBtn{
+  @apply w-full mt-4 py-2 text-center text-richblack-700 text-xl font-normal bg-yellow-50 rounded-md
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.scrollbar{
+  /* scrollbar-width: auto; */
+  scrollbar-width: 20px;
+  scrollbar-color: #afb2bf;
+}
+
+* {
+  /* scrollbar-width: auto; */
+  scrollbar-width: 20px;
+  scrollbar-color: #afb2bf;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000814;
+  /* background: #12D8FA; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #afb2bf;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+*:active::-webkit-scrollbar-thumb,
+*:focus::-webkit-scrollbar-thumb,
+*:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
 }
