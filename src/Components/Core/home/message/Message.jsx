@@ -18,8 +18,8 @@ export default function Message({message}) {
          
            {
           message?.file ? <a  
-          href={message?.file} target='blank_new' className='relative w-[200px] h-[200px]  text-[#f3f6f3d3]' >
-            <embed src={message?.file} className='w-[200px] h-[200px] p-4 scrollbar' />
+          href={message?.file} target='blank_new' className='relative w-[250px] h-[250px]  text-[#f3f6f3d3]' >
+            <embed src={message?.file} className='w-[150px] h-[150px] p-4 scrollbar' />
             <IoOpen className='absolute top-1 '/>
           </a> : <p className='hidden'></p>
          }

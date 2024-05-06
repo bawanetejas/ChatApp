@@ -33,7 +33,7 @@ export default function TypeMessage() {
     }
 
   return (
-    <form onSubmit={handleSubmit} className='  bottom-0 flex gap-2 items-center 
+    <form onSubmit={handleSubmit} className=' absolute bottom-0 flex gap-2 items-center 
     justify-center w-full px-4 py-2'>
      <input
         placeholder='Type message'

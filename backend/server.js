@@ -28,6 +28,7 @@ app.use(fileupload({
 app.use(
     cors({
         origin:'https://chat-app-three-azure.vercel.app',
+        // origin:'http://localhost:3000',
         credentials:true,
         optionsSuccessStatus:200,
     })

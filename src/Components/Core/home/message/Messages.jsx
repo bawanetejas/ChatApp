@@ -46,13 +46,13 @@ useEffect(()=>{
       
       }
     });
-    console.log("onlline user from messages ,",onlineUsers)
+    // console.log("onlline user from messages ,",onlineUsers)
     return () => socket?.off("newMessage");
 },[socket,setMessages,messages]);
 
 
   return (
-    <div className='px-4 flex-1 relative h-[75%] overflow-y-auto overflow-x-hidden w-full'>
+    <div className='px-4 flex-1 relative h-[82%] overflow-y-auto overflow-x-hidden w-full'>
          { chatFriend &&
           messages?.length > 0 && 
 

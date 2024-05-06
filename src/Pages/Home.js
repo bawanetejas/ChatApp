@@ -24,7 +24,7 @@ export default function Home() {
             }
             {
               !chatFriend &&
-              <div className='flex items-center justify-center text-center text-richblack-200 ml-10'>
+              <div className=' hidden xs:flex items-center justify-center text-center text-richblack-200 ml-10'>
                 <p>Select a friend to chat</p>
               </div>
             }

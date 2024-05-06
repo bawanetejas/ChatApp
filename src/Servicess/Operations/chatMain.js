@@ -15,7 +15,7 @@ export const getAllUser = async (token,dispatch)=>{
         dispatch(setAllFriends(res.data.data));
         console.log(res);
     }catch(error){
-        console.log("error in the get user api-->",error);
+        // console.log("error in the get user api-->",error);
         toast.error("Not able to fetch user");
     }
     finally{
@@ -37,7 +37,7 @@ export const getAllMessage = async (token,fid,dispatch)=>{
        dispatch(setMessages(res.data.message));
        
     }catch(error){
-        console.log("Error in the get all message api-->",error);
+        // console.log("Error in the get all message api-->",error);
         toast.error("Something went wrong");
     }
     finally{
@@ -68,6 +68,7 @@ export const sendMessage = async(token,id,message,dispatch,messages,feFile)=>{
 
        
     }catch(error){
-        console.log("error in the send message api -->",error);
+        // console.log("error in the send message api -->",error);
+        toast.error("not able to fetch messages")
     }
 }
